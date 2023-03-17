@@ -1,0 +1,6 @@
+size,name,price,flavor,frosting,sprinkles,filling
+regular,Mint Cookie,2.99,Mint,Chocolate,"['cookie bits']",Chocolate
+mini,Carrot Cake,0.99,Carrot,Vanilla,['Carrot pieces'],
+large,Fudge Delight,3.99,Fudge,Chocolate,['Dark Chocolate', 'Chocolate'], Fudge
+regular,Coffee Lovers,2.99,Coffee,Vanilla,['Coffee Beans],
+regular,Rainbow,2.99,Sherbert,Rainbow,['Rainbow Sprinkles'],
