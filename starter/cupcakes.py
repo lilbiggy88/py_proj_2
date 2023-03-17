@@ -90,10 +90,15 @@ class Mini(Cupcake):
         self.frosting = frosting
         self.sprinkles = []
 
+    def calculate_price(self, quantity):
+        return quantity * self.price
+
 my_mini_cupcake = Mini("Chocolate", 1.99, "Chocolate", "White",)
 print(my_mini_cupcake.name)
 print(my_mini_cupcake.price)
 print(my_mini_cupcake.size)
+
+
 
 class Large(Cupcake):
     size = "large"
@@ -104,20 +109,23 @@ class Large(Cupcake):
         self. flavor = flavor
         self.frosting = frosting
         self.sprinkles = []
+    
+    def calculate_price(self, quantity):
+        return quantity * self.price
 
 # from abc import ABC
 
 # class Vehicle(ABC):
 #     pass
 
-cupcake1 = Cupcake("Stars and Stripes", 2.99, "Vanilla", "Chocolate")
-cupcake1.add_sprinkles("Red", "White", "Blue")
+# cupcake1 = Cupcake("Stars and Stripes", 2.99, "Vanilla", "Chocolate")
+# cupcake1.add_sprinkles("Red", "White", "Blue")
 cupcake2 = Mini("Oreo", .99, "Chocolate", "Cookies and Cream")
 cupcake2.add_sprinkles("Oreo pieces")
-cupcake3 = Large("Red Velvet", 3.99, "Red Velvet", "Cream Cheese", None)
+cupcake3 = Large("Red Velvet", 3.99, "Red Velvet", "Cream Cheese")
 
 cupcake_list = [
-    cupcake1,
+    # cupcake1,
     cupcake2,
     cupcake3
 ]
